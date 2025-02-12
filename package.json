@@ -1,0 +1,12 @@
+{
+  "name": "flower-generator",
+  "version": "1.0.0",
+  "description": "An Electron app that generates flowers based on user answers.",
+  "main": "main.js",
+  "scripts": {
+    "start": "index.html"
+  },
+  "dependencies": {
+    "electron": "^latest"
+  }
+}

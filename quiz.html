@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Find Your Flower! 🌸</h1>
+        <div id="quizContainer">
+            <div class="question" id="question1">
+                <h2>What is your favorite season?</h2>
+                <label><input type="radio" name="q1" value="1"> 🌸 Spring</label>
+                <label><input type="radio" name="q1" value="2"> ☀️ Summer</label>
+                <label><input type="radio" name="q1" value="3"> 🍂 Autumn</label>
+                <label><input type="radio" name="q1" value="4"> ❄️ Winter</label>
+
+                <button onclick="nextQuestion(1)">Next</button>
+            </div>
+
+            <div class="question hidden" id="question2">
+                <h2>How would you describe your personality?</h2>
+                <label><input type="radio" name="q2" value="1"> 🌱 Calm and gentle</label>
+                <label><input type="radio" name="q2" value="2"> 🎆 Energetic and passionate</label>
+                <label><input type="radio" name="q2" value="3"> 🌞 Cheerful and optimistic</label>
+                <label><input type="radio" name="q2" value="4"> 🧐 Mysterious and deep</label>
+                <button onclick="prevQuestion(1)">Back</button>
+                <button onclick="nextQuestion(2)">Next</button>
+            </div>
+
+            <div class="question hidden" id="question3">
+                <h2>What type of environment makes you happiest?</h2>
+                <label><input type="radio" name="q3" value="1"> 🌊 By the ocean</label>
+                <label><input type="radio" name="q3" value="2"> 🏡 In a cozy home</label>
+                <label><input type="radio" name="q3" value="3"> 🏔️ In the mountains</label>
+                <label><input type="radio" name="q3" value="4"> 🌲 In the forest</label>
+                <button onclick="prevQuestion(2)">Back</button>
+                <button onclick="nextQuestion(3)">Next</button>
+            </div>
+
+            <div class="question hidden" id="question4">
+                <h2>How do you express love and care?</h2>
+                <label><input type="radio" name="q4" value="1"> 🤗 Giving warm hugs</label>
+                <label><input type="radio" name="q4" value="2"> 💌 Writing heartfelt letters</label>
+                <label><input type="radio" name="q4" value="3"> 🎁 Giving thoughtful gifts</label>
+                <label><input type="radio" name="q4" value="4"> 💬 Spending quality time</label>
+                <button onclick="prevQuestion(3)">Back</button>
+                <button onclick="calculateFlower()">Find My Flower</button>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
